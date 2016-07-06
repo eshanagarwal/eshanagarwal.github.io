@@ -1,1 +1,241 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>eagarwal</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"></link>
+    <link rel="stylesheet" type="text/css" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="jquery-ui/jquery-ui.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
+    <script src="Frameworks/typed/js/typed.js"></script>
+    <script src="Frameworks/scrollTo/jquery.scrollTo.js" type="text/javascript"></script>
+    <script src="Frameworks/localScroll/jquery.localScroll.js" type="text/javascript"></script>
+    <script src="javascripts/source.js"></script>
+  </head>
+  <body onload="bodyLoad()">
+  	<div id="top"></div>
+  	<div class="header" style="z-index: 2; opacity:0; position:fixed; width:100%; background-color:white;height: 50px; border-bottom: 2px solid black;"> 
+  		<div style="margin-left: 20px; margin-top: 5px; display:inline-block;">
+  			<h5 id="name">Eshan Agarwal &nbsp;&nbsp;• &nbsp;&nbsp;Student at Columbia University</h5>
+  		</div>
+  		<div style="float:right; margin-top: 15px; margin-right: 20px; display:inline-block;">
+  			<button class="navButton" onclick="scrollToLink('#top')">Top</button>
+  			<button class="navButton" onclick="scrollToLink('#projects')">Projects</button>
+  			<button class="navButton" onclick="scrollToLink('#work')">Work</button>
+   			<button class="navButton" onclick="scrollToLink('#skills')">Skills</button>
+  			<button class="navButton" onclick="scrollToLink('#contact')">Contact</button>
+  		</div>
+  	</div>
+  	<div class="container-fluid">
+  		<div class="row home" id="home">
+  			<div class="col-md-12" style="height: 450px;">
+  				<!-- picture frame -->
+  				<div onclick="" class="col-md-4 col-sm-4 col-xs-12 center-block" id="image-holder" style="text-align:right; margin-top: 110px;">
+  					<img class="home-image" src="Resources/picture_frame.png">
+  					<img class="home-image hiddenFrame one" src="Resources/picture_frame.png">
+  					<img class="home-image hiddenFrame" src="Resources/picture_frame.png">
+  					<img class="home-image hiddenFrame" src="Resources/picture_frame.png">
+  				</div>
+
+  				<div class="col-md-8 col-sm-8 col-xs-12" id="title-holder">
+  					<h1 class="home-title"><span class="home-title-text" ></span></h1>
+  					<h4 class="home-subtitle">Developer • Designer • Researcher • Nerd</h4>
+  					<div style="text-align:center; margin-top: 20px;">
+  						<button onclick="scrollToLink('#projects')" style="background-color:transparent; border: none;">
+  							<img id="projects-button" src="Resources/projects_button.png">
+  						</button>
+  						<button onclick="scrollToLink('#work')" style="background-color:transparent; border: none;">
+  							<img id="work-button" src="Resources/work_button.png">
+  						</button>
+  						<button onclick="scrollToLink('#skills')" style="background-color:transparent; border: none;">
+  							<img id="skills-button" src="Resources/skills_button.png">
+  						</button>
+  						<button onclick="scrollToLink('#contact')" style="background-color:transparent; border: none;">
+  							<img id="contact-button" src="Resources/contact_button.png">
+  						</button>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+
+  		<div id="projects"></div>
+  		<div class="row" style="height: 450px;">
+  			<div class="col-md-12">
+  				<h1 style="text-align:center;">Projects</h1>
+  			</div>
+  			<div class="col-md-12" style="margin-top: 25px;">
+  				<div class="col-md-4 col-xs-12" style="text-align:center;" >
+  					<img src="Resources/bites_logo.jpg" style="width: 200px; height: 50px;">
+  					<h4 class="project_subtitle"><i>Co-Founder</i></h4>
+  					<p>Bites is an iPhone and Android app that allows college students to sell affordable, home-cooked food to other students on campus. I developed the app in my freshman year at Columbia with two friends. After working really hard throughout the fall and winter, we launched the app in March of 2016 and have been working on marketing the app on campus since. Bites won 2nd place at Columbia’s Undergrad Fast Pitch Competition, and was a finalist at the Columbia Venture Competition. <a href="www.bitesapp.com">Visit Landing Page</a></p>
+	  			</div>
+	  			<div class="col-md-4 col-xs-12" style="text-align:center; margin-bottom:">
+	  				<img src="Resources/flip_logo.png" style="width: 120px; height: 50px;">
+	  				<h4 class="project_subtitle"><i>Personal Project</i></h4>
+	  				<p>Studying is boring. This is why I created Flip for a high school research project in 10th grade. Flip uses speech recognition and synthesis APIs to create verbal back-and-forth quizzing sessions for students to provide an engaging and productive studying experience. In addition, Flip uses adaptive algorithms to learn what content student’s are strong with, and which content they are weak in. I researched Flip’s effectiveness in a classroom setting and published my results at the 2014 World Conference on E-Learning.<a href="www.studywithflip.com">Visit Landing Page</a></p>
+	  			</div>
+	  			<div class="col-md-4 col-xs-12" style="text-align:center;">
+	  				<img src="Resources/popfactor_logo.png" style="width:200px; background-color:transparent;">
+	  				<h4 class="project_subtitle" style="margin-top: 5px;"><i>Devfest Hackathon</i></h4>
+	  				<p>Social media was built for showing off to our friends and family. PopFactor provides analytics for Instagram users to understand which colors in their pictures are most responsible for generating the most likes. The web app makes use of APIs from Instagram and Cloudinary, and uses technologies like Angular, Node, and MongoDB. In the future, I would like to expand the platform to provide analytics for friend's tagged in user's posts.</p>
+	  			</div>
+	  		</div>
+  			
+  		</div>
+
+  		<hr>
+
+  		<div id="work"></div>
+  		<div class="row" style="height: 400px;">
+  			<div class="col-md-12">
+  				<h1 style="text-align:center;">Work Experiences</h1>
+  			</div>
+  			<div class="col-md-12" style="margin-top: 25px;">
+  				<div class="col-md-4 col-xs-12" style="text-align:center;" >
+  					<img src="Resources/smartasset-Logo.png" style="width: 200px; height: 30px; margin-top: 10px;">
+  					<h4 class="project_subtitle" style="margin-top:20px;"><i>Software Development Intern</i></h4>
+  					<h5 class="project_subtitle sub" style="margin-top:10px;"><i>Summer 2016</i></h5>
+  					<p>Smartasset is a fintech startup located in New York City. As an intern this past summer I worked on migrating backend architecture to microservices using Netflix Eureka for service discovery, fault tolerance, and middle-tier load balancing. I also worked on tools for updating ip address location data, SEO optimization, and load stress testing.</p>
+	  			</div>
+	  			<div class="col-md-4 col-xs-12" style="text-align:center; margin-bottom:">
+	  				<img src="Resources/liinc_logo.png" style="width: 300px; height: 50px;">
+	  				<h4 class="project_subtitle"><i>Undergraduate Researcher</i></h4>
+	  				<h5 class="project_subtitle sub" style="margin-top:10px;"><i>December 2015 - Current </i></h5>
+	  				<p>At Columbia’s LIINC lab I work on building real-time, virtual reality - brain computer interface technology. I’ve worked on integrating software solutions from open source code for time syncing data from multiple streams including EEG, Oculus, and Eye Tracking data.</p>
+	  			</div>
+	  			<div class="col-md-4 col-xs-12" style="text-align:center;">
+	  				<img src="Resources/csw_hcilab_logo.png" style="width:200px; background-color:transparent;">
+	  				<h4 class="project_subtitle"><i>Independent Researcher</i></h4>
+	  				<h5 class="project_subtitle sub" style="margin-top:10px;"><i>Winter 2011 - Fall 2014</i></h5>
+	  				<p>In high school, I studied Human Computer Interaction with Dr. David Brown wishing our CS Department. I coauthored three papers on the effects computer science can have on the larger society, focusing on issues of gender imbalance in the tech community and how mobile apps can effect learning and retention in the classroom. Abstracts to these papers can be found <a href="">here</a>.</p>
+	  			</div>
+	  		</div>
+  		</div>
+
+		<hr>
+		
+  		<div id="skills"></div>
+  		<div class="row" style="">
+  			<div class="col-md-12">
+  				<h1 style="text-align:center;">Skills</h1>
+  			</div>
+  			<div class="col-md-12" style="margin-top: 20px;">
+  				<div class="col-md-2 col-sm-12" style="height: 40px;">
+	  				<h3 class="skillsTitle" style="margin-top:10px; text-align:right; font-size: 1.75vw;">Java:</h3>
+	  			</div>
+	  			<div class="col-md-10 col-sm-12 skills-meters">
+	  				<div class="meter">
+	  					<span class="skillMeters" style="width: 1%;"></span>
+	  				</div>
+			    </div>
+  			</div>
+
+  			<div class="col-md-12" style="margin-top: 20px;">
+  				<div class="col-md-2 col-sm-12" style="height: 40px;">
+	  				<h3 class="skillsTitle" style="margin-top:10px; text-align:right; font-size: 1.75vw;">C/C++:</h3>
+	  			</div>
+	  			<div class="col-md-10 col-sm-12 skills-meters">
+	  				<div class="meter" style="text-align:center;">
+	  					<span class="skillMeters" style="width: 1%;"></span>
+	  				</div>
+			    </div>
+  			</div>
+
+  			<div class="col-md-12" style="margin-top: 20px;">
+  				<div class="col-md-2 col-sm-12" style="height: 40px;">
+	  				<h3 class="skillsTitle" style="margin-top:10px; text-align:right; font-size: 1.75vw;">Frontend Web:</h3>
+	  			</div>
+	  			<div class="col-md-10 col-sm-12 skills-meters">
+	  				<div class="meter" style="text-align:center;">
+	  					<span class="skillMeters" style="width: 1%;"></span>
+	  				</div>
+			    </div>
+  			</div>
+
+  			<div class="col-md-12" style="margin-top: 20px;">
+  				<div class="col-md-2 col-sm-12" style="height: 40px;">
+	  				<h3 class="skillsTitle" style="margin-top:10px; text-align:right; font-size: 1.75vw;">Backend Web:</h3>
+	  			</div>
+	  			<div class="col-md-10 col-sm-12 skills-meters">
+	  				<div class="meter" style="text-align:center;">
+	  					<span class="skillMeters" style="width: 1%;"></span>
+	  				</div>
+			    </div>
+  			</div>
+  			
+  			<div class="col-md-12" style="margin-top: 20px;">
+  				<div class="col-md-2 col-sm-12" style="height: 40px;">
+	  				<h3 class="skillsTitle" style="margin-top:10px; text-align:right; font-size: 1.75vw;">Mobile:</h3>
+	  			</div>
+	  			<div class="col-md-10 col-sm-12 skills-meters">
+	  				<div class="meter" style="text-align:center;">
+	  					<span class="skillMeters" style="width: 1%;"></span>
+	  				</div>
+			    </div>
+  			</div>
+
+  			<div class="col-md-12 col-sm-12" style="margin-top: 25px; height: 40px; margin-bottom: 50px;">
+	  			<h3 class="" style="text-align: center;"><u>Also familiar with:</u> HTML, Angular, SCSS, JS, Node, PHP, SQL, MonogDB, Pay Framework, Objective-C, Unity</h3>
+  			</div>
+
+  		</div>
+
+  		<hr>
+
+  		<div class="row" style="">
+  			<div class="col-md-12 col-sm-12">
+  				<h1 style="text-align:center;">Other Stuff</h1>
+  			</div>
+  			<div class="col-md-4 ccol-sm-12" style="text-align:center;">
+  				<h4>Awards</h4>
+  				<p>Egleston Scholar (Top 1% of Columbia Engineering Class of 2019) • Finalist at Columbia Venture Competition • Rochester University Award for Technology and Innovation</p>
+  			</div>
+  			<div class="col-md-4 col-sm-12" style="text-align:center;">
+  				<h4>Hobbies</h4>
+  				<p>Football • Basketball • Tennis • Piano • Reading • Coding (duh...)</p>
+  			</div>
+  			<div class="col-md-4 col-sm-12" style="text-align:center;">
+  				<h4>Coursework</h4>
+  				<p>Data Structures in Java • Advanced Programming in C/C++ • Fundamentals of Computer Systems (FSMs, MIPS, Caching)</p>
+  			</div>
+
+  		</div>
+
+  		<hr>
+
+  		<div id="contact"></div>
+  		<div class="row" style="margin-bottom:50px;">
+  			<div class="col-md-12">
+  				<h1 style="text-align:center;">Get In Touch</h1>
+  			</div>
+  			<div class="col-md-12">
+  				<div class="center-block" style="text-align:center; margin-top: 10px;">
+					<button  style="background-color:transparent; border: none;">
+						<img id="linkedin-button" src="Resources/linkedin_button.png">
+					</button>
+					<button style="background-color:transparent; border: none;">
+						<img id="fb-button" src="Resources/fb_button.png">
+					</button>
+					<button style="background-color:transparent; border: none;">
+						<img id="github-button" src="Resources/github_button.png">
+					</button>
+					<button style="background-color:transparent; border: none;">
+						<img id="email-button" src="Resources/email_button.png">
+					</button>
+				</div>
+  			</div>
+  		</div>
+
+  		<div class="row" style="background-color: black;">
+  			<div class="col-md-12">
+  				<h3 style="margin-top: 30px; text-align:center; color: white;"> © 2016 • Designed and Developed by Eshan Agarwal</h3>
+  				<h5 style="text-align:center; color: white; margin-bottom:15px;">New York, NY 10027</h5>
+  			</div>
+  		</div>
+
+  	</div>
+  
+  </body>
+</html>

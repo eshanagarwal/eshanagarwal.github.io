@@ -1,0 +1,181 @@
+@import "bootstrap-compass";
+@import "bootstrap-variables";
+@import "bootstrap";
+
+$homeColor: #3498DB;
+$imageSize: 250px;
+$navButtonSize: 75px;
+
+a {
+	margin-right: 20px;
+}
+hr {
+	border-color:black;
+	width: 70%;
+}
+p {
+	padding-bottom: 20px;	
+}
+
+.project_title {
+	text-align:center;
+}
+.home {
+	background-color: $homeColor;
+	opacity: 0.7;
+}
+
+.home-image {
+	height: $imageSize; 
+	width:  $imageSize; 
+	margin-top:50px;
+	margin:auto;
+}
+
+.home-title {
+	color:white; 
+	margin-top:150px; 
+	text-align:center;
+}
+
+.home-subtitle {
+	color:white;
+	text-align:center;
+	margin-top:20px;
+}
+
+.hiddenFrame {
+	display:none;
+	visibility:hidden;
+	margin-right:20px;
+	.one {
+		float:left;
+
+	}
+}
+
+.button-basics {
+	width: $navButtonSize;
+	height: $navButtonSize;	
+}
+
+#projects-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/projects_button_highlighted.png");
+	}
+}
+
+#work-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/work_button_highlighted.png");
+	}
+}
+
+#skills-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/skills_button_highlighted.png");
+	}
+}
+
+#contact-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/contact_button_highlighted.png");
+	}
+}
+
+#linkedin-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/linkedin_highlighted.png");
+	}
+}
+
+#fb-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/fb_highlighted.png");
+	}
+}
+
+#github-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/github_highlighted.png");
+	}
+}
+
+#email-button {
+	@extend .button-basics;
+	&:hover {
+		content:url("../Resources/email_highlighted.png");
+	}
+}
+
+.project_subtitle {
+	color: grey;
+	text-align:center;
+	.sub {
+		color: lightGray;
+	}
+}
+
+.meter { 
+	height: 40px;
+	width: 85%;
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	span {
+		display: block;
+		height: 100%;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+		background-color: rgb(43,194,83);
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+.navButton {
+	background-color:transparent;
+	color:black;
+	border:none;
+	height:auto;
+	margin-top:-15px;
+}
+
+.skillsTitle {
+	margin-bottom:10px;
+}
+
+//for typed.js cursor
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

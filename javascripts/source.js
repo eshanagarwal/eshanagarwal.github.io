@@ -41,7 +41,7 @@ function rotateColors() {
 
 function typeText() {
       $(".home-title-text").typed({
-        strings: ["Hey there, I'm Eshan!", " ^1000 Thanks for visiting my site!"],
+        strings: [" ^1000 Hey there, I'm Eshan!", " ^1000 Thanks for visiting my site!"],
         typeSpeed: 50,
         backDelay: 2500,
         loop: true

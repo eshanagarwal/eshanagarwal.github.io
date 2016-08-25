@@ -1,6 +1,6 @@
-var colors = ["#16a085", "#27ae60", "#2980b9", "#8e44ad", "#2c3e50", "#3498db"];
+var colors = ["#16a085", "#2980b9", "#3498db", "#e74c3c", "#e67e22"];
 var skillPercents = ["90%", "70%", "60%", "80%", "35%"];
-var colorTransitionTime = 5000;
+var colorTransitionTime = 10000;
 var timeBetweenTypedText = 2000;
 var scrollPosition;
 var skillsShowing = false;

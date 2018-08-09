@@ -7,8 +7,13 @@
 	<script type="text/javascript" src="main.js"></script>
 </head>
 <body>
+	<input type="text" id="email_address"
 	<input id="fileInput" type="file" name="fileField"><br /><br />
 	<button onclick="submit()">Submit</button>
-	<div id="results"></div>
+	
+	<form action="script.php" method="post">
+    	<input type="submit" value="Open Script" name="submit">
+	</form>
+	
 </body>
 </html>
